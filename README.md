@@ -58,14 +58,15 @@
 - **HostSystem/**
 
   - **Frontend/**
-    - README.md             `<!-- 前端项目说明文档 -->`
-- **Backend/**
 
-  - **MQTT_Server/**
-  - **Java_Server/**
-    - README.md             `<!-- 后端项目说明文档 -->`
-  - **Python_Server/**
-    - README.md             `<!-- 人脸识别项目说明文档 -->`
+    - README.md             `<!-- 前端项目说明文档 -->`
+  - **Backend/**
+
+    - **MQTT_Server/**
+    - **Java_Server/**
+      - README.md             `<!-- 后端项目说明文档 -->`
+    - **Python_Server/**
+      - README.md             `<!-- 人脸识别项目说明文档 -->`
 - **SlaveSystem/**
 
   - **STM32/**
