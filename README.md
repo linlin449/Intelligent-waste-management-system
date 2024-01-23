@@ -53,33 +53,34 @@
 
 以上为系统的基本架构和模块设计，将实现智能废料打包系统的各个层次整合在一起。
 
-# 文件结构
+# 项目目录结构
 
-|-- HostSystem/
-|	|-- Frontend/
-|	|   |-- README.md             # 前端项目说明文档
+- **HostSystem/**
 
-|-- Backend/
-|	|   |-- MQTT_Server/          # 存放MQTT服务器相关文件
-|	|   |-- Java_Server/          # 存放Java服务器相关文件
-|	|   	|-- README.md             # 后端项目说明文档
+  - **Frontend/**
+    - README.md             `<!-- 前端项目说明文档 -->`
+- **Backend/**
 
-|	|   |-- Python_Server/          # 存放Python人脸识别相关文件
-|	|   	|-- README.md             # 后端项目说明文档
+  - **MQTT_Server/**
+  - **Java_Server/**
+    - README.md             `<!-- 后端项目说明文档 -->`
+  - **Python_Server/**
+    - README.md             `<!-- 人脸识别项目说明文档 -->`
+- **SlaveSystem/**
 
-|-- SlaveSystem/
-|   |-- STM32/                # 存放STM32代码
-|   |   |-- README.md         # STM32项目说明文档
-|
-|   |-- ESP32/                # 存放ESP32代码
-|   |   |-- README.md         # ESP32项目说明文档
+  - **STM32/**
+    - README.md             `<!-- STM32项目说明文档 -->`
+  - **ESP32/**
+    - README.md             `<!-- ESP32项目说明文档 -->`
+- **Documents/**
 
-|-- Documents/                # 存放项目文档，如设计文档、API文档等
-|-- Tests/                    # 存放测试相关文件
+  - `<!-- 存放项目文档，如设计文档、API文档等 -->`
+- **Tests/**
 
-|-- .gitignore                # Git忽略文件配置
-|-- LICENSE                   # 项目许可证
-|-- README.md                 # 项目说明文档
+  - `<!-- 存放测试相关文件 -->`
+- .gitignore              `<!-- Git忽略文件配置 -->`
+- LICENSE                 `<!-- 项目许可证 -->`
+- README.md               `<!-- 项目说明文档 -->`
 
 # 技术实现
 
