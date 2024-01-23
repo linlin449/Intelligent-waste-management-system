@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: LoT-Back
+  data:
+    mongodb:
+      username: root
+      password: 123456
+      host: localhost
+      port: 27017
+      database: LoTSystem
+      authentication-database: admin
+  mqtt:
+    url: tcp://192.168.3.30:1882
+    username: admin
+    password: public
+    client:
+      id: code_dev
