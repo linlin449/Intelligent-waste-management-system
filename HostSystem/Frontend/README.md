@@ -1,18 +1,45 @@
-# Vue 3 + TypeScript + Vite
+### 技术
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 + TypeScript + Vite
 
-## Recommended IDE Setup
+环境：vscode  node （我的是20.9.0）
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+在进入项目后使用  yarn  安装  依赖
 
-## Type Support For `.vue` Imports in TS
+yarn dev 开始运行项目
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### 界面
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+    登录界面
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+1. #### **首页统计:**
+
+   - 当前垃圾桶数量: [显示数量]
+   - 用户总数: [显示数量]
+   - 操作次数统计: [显示数量]
+2. #### **第一个界面:**
+
+   - 列出垃圾桶卡片，包括：
+     - 垃圾桶编号
+     - 下位机组件状态
+     - 当前状态（满了/未满）和重量
+     - "查看操作"按钮
+   - 操作展开后显示最近十条用户操作，包括：
+     - 时间
+     - 姓名
+     - 操作类型
+     - 放置废物重量
+3. #### **第二个界面:**
+
+   - 录入人脸信息：
+     - 输入姓名
+     - 上传人脸照片
+     - 提交按钮
+4. #### **第三个界面:**
+
+   - 展示当前用户列表，每个用户卡片包括：
+     - 照片
+     - 姓名
+     - 操作次数统计
+     - "查看操作"按钮
+   - 操作展开后，显示该用户下的垃圾桶操作，按照第一个界面的展示逻辑。

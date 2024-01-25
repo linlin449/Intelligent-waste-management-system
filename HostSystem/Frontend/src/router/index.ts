@@ -7,32 +7,26 @@ export default createRouter({
             // 主页
             path: "/",
             name: "Index",
-            component: () => import("@/views/home/index.vue"),
+            component: () => import("@/views/index.vue"),
             children:[
                 {
-                    // 活动
-                    path: "home",
-                    name: "Home",
-                    component: () => import("@/views/home/main.vue"),
+                    // 用户
+                    path: "user",
+                    name: "User",
+                    component: () => import("@/views/user/index.vue"),
                 },
                 {
-                    // 活动
-                    path: "activity",
-                    name: "Activity",
-                    component: () => import("@/views/activity/index.vue"),
+                    // 用户
+                    path: "face",
+                    name: "Face",
+                    component: () => import("@/views/face/index.vue"),
                 },
                 {
-                    // 留言
-                    path: "comment",
-                    name: "Comment",
-                    component: () => import("@/views/comment/index.vue"),
-                },
-                {
-                    // 活动
-                    path: "/activitydetail",
-                    name: "ActivityDetail",
-                    component: () => import("@/views/activity/detail.vue"),
-                },
+                    // 废料桶
+                    path: "wasteBin",
+                    name: "WasteBin",
+                    component: () => import("@/views/wasteBin/index.vue"),
+                }
             ]
         },
         {

@@ -1,29 +1,28 @@
 #include "stm32f10x.h"                  // Device header
-
+void AllInit();
 int main(void)
 {
-	/*开启时钟*/
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);	//开启GPIOC的时钟
-															//使用各个外设前必须开启时钟，否则对外设的操作无效
-	
-	/*GPIO初始化*/
-	GPIO_InitTypeDef GPIO_InitStructure;					//定义结构体变量
-	
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;		//GPIO模式，赋值为推挽输出模式
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;				//GPIO引脚，赋值为第13号引脚
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;		//GPIO速度，赋值为50MHz
-	
-	GPIO_Init(GPIOC, &GPIO_InitStructure);					//将赋值后的构体变量传递给GPIO_Init函数
-															//函数内部会自动根据结构体的参数配置相应寄存器
-															//实现GPIOC的初始化
-	
-	/*设置GPIO引脚的高低电平*/
-	/*若不设置GPIO引脚的电平，则在GPIO初始化为推挽输出后，指定引脚默认输出低电平*/
-//	GPIO_SetBits(GPIOC, GPIO_Pin_13);						//将PC13引脚设置为高电平
-	GPIO_ResetBits(GPIOC, GPIO_Pin_13);						//将PC13引脚设置为低电平
-	
+//TODO 人体传感器，BodySensor,检测是否有人出现
+/*设备：人体红外传感器HC-SR501	 端口：*/
+//TODO 重力检测器，PressureSensor,检测重量
+/*设备：	 端口：*/
+//TODO 红外检测器，InfraredSensor,检测是否满了
+/*设备：	 端口：*/
+//TODO 电机驱动 ，Motor，驱动电机进行操作
+/*设备：	 端口：*/
+//TODO ESP32串口，Esp32Serial
+/*端口：	*/
+//TODO 串口屏	，Stm32Serial
+/*端口：	*/
+	AllInit();
 	while (1)
 	{
+		//状态机逻辑
 		
 	}
+}
+
+void AllInit()
+{
+	
 }

@@ -9,6 +9,9 @@ const service = axios.create({
         'Content-Type': 'application/json; charset=UTF-8'
     },
 })
+/**
+ * 发送初始化
+ */
 service.interceptors.request.use(
     config => {
         //TODO 在请求头中添加token
@@ -19,7 +22,9 @@ service.interceptors.request.use(
     }
 )
 
-// response interceptor
+/**
+ * 接受初始化
+ */
 service.interceptors.response.use(
     response => {
         const res = response.data;
