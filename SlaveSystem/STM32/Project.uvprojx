@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\User;.\Library</IncludePath>
+              <IncludePath>.\Start;.\User;.\Library;.\HandWare</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -669,6 +669,71 @@
               <FileName>stm32f10x_it.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\User\stm32f10x_it.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HandWare</GroupName>
+          <Files>
+            <File>
+              <FileName>InfraredSensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HandWare\InfraredSensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>Esp32Serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HandWare\Esp32Serial.c</FilePath>
+            </File>
+            <File>
+              <FileName>Stm32Serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HandWare\Stm32Serial.c</FilePath>
+            </File>
+            <File>
+              <FileName>Motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HandWare\Motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>PressureSensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HandWare\PressureSensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>BodySensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HandWare\BodySensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>InfraredSensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HandWare\InfraredSensor.h</FilePath>
+            </File>
+            <File>
+              <FileName>BodySensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HandWare\BodySensor.h</FilePath>
+            </File>
+            <File>
+              <FileName>PressureSensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HandWare\PressureSensor.h</FilePath>
+            </File>
+            <File>
+              <FileName>Motor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HandWare\Motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>Esp32Serial.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HandWare\Esp32Serial.h</FilePath>
+            </File>
+            <File>
+              <FileName>Stm32Serial.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HandWare\Stm32Serial.h</FilePath>
             </File>
           </Files>
         </Group>

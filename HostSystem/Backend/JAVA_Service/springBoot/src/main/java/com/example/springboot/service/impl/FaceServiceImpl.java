@@ -38,9 +38,9 @@ public class FaceServiceImpl implements FaceService {
         Face existingFace = faceRepository.findByUserId(userId);
         if (existingFace != null) {
             // Update fields as needed
-            existingFace.setUserName(updatedFace.getUserName());
-            existingFace.setFaceData(updatedFace.getFaceData());
-            existingFace.setPermissions(updatedFace.getPermissions());
+//            existingFace.setUserName(updatedFace.getUserName());
+//            existingFace.setFaceData(updatedFace.getFaceData());
+//            existingFace.setPermissions(updatedFace.getPermissions());
             // Update other fields...
 
             return faceRepository.save(existingFace);
